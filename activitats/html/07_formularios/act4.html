@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camara de fotos</title>
+</head>
+<body>
+
+<h2>Búsqueda de Cámaras de Fotos</h2>
+
+<form action="/buscar-camaras" method="get">
+    <div>
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" placeholder="Canon, Nikon, Sony, etc.">
+    </div>
+    <div>
+        <label for="resolucion">Resolución mínima (en megapíxeles):</label>
+        <input type="text" id="resolucion" name="resolucion" placeholder="Ej. 16, 20, 24">
+    </div>
+    <div>
+        <label for="precio">Precio máximo:</label>
+        <select id="precio" name="precio">
+            <option value="">Cualquier precio</option>
+            <option value="500">$500</option>
+            <option value="1000">$1000</option>
+            <option value="2000">$2000</option>
+            <option value="5000">$5000</option>
+        </select>
+    </div>
+    <input type="submit" value="Buscar">
+</form>
+
+</body>
+</html>
