@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Comentarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .comments {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment .author {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .comment .date {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .comment .message {
+            margin-top: 5px;
+            color: #444;
+        }
+
+        .comment .reply-link {
+            font-size: 12px;
+            color: #03a9f4;
+            text-decoration: none;
+        }
+
+        .comment .reply-link:hover {
+            text-decoration: underline;
+        }
+
+        .reply-form {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .reply-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        .reply-form input[type="submit"] {
+            background-color: #03a9f4;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reply-form input[type="submit"]:hover {
+            background-color: #0288d1;
+        }
+    </style>
+</head>
+<body>
+    <div class="comments">
+        <div class="comment">
+            <div class="author">Usuario 1</div>
+            <div class="date">2 de febrero de 2024</div>
+            <div class="message">¡Esto es un comentario de prueba!</div>
+            <a href="#" class="reply-link">Responder</a>
+        </div>
+        <div class="comment">
+            <div class="author">Usuario 2</div>
+            <div class="date">3 de febrero de 2024</div>
+            <div class="message">¡Gracias por el comentario!</div>
+            <a href="#" class="reply-link">Responder</a>
+        </div>
+        <div class="reply-form">
+            <form action="#" method="post">
+                <textarea name="reply" placeholder="Escribe tu respuesta aquí" rows="3"></textarea><br>
+                <input type="submit" value="Enviar respuesta">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
