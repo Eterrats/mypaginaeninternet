@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat entre dos personas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .chat-container {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .mensaje {
+            margin-bottom: 20px;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .avatar {
+            float: left;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .nombre {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .fecha {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .mensaje-texto {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .mensaje-texto.primario {
+            background-color: #cfe7f3;
+        }
+
+        .mensaje-texto.secundario {
+            background-color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="mensaje">
+            <img src="mrtartaria.png" alt="Avatar Primario" class="avatar">
+            <div>
+                <div class="nombre">Persona Primaria</div>
+                <div class="fecha">3 de febrero de 2024</div>
+                <div class="mensaje-texto primario">
+                    ¡Hola! ¿Cómo estás?
+                </div>
+            </div>
+        </div>
+
+        <div class="mensaje">
+            <img src="empirico.png" alt="Avatar Secundario" class="avatar">
+            <div>
+                <div class="nombre">Persona Secundaria</div>
+                <div class="fecha">4 de febrero de 2024</div>
+                <div class="mensaje-texto secundario">
+                    ¡Hola! Estoy bien, gracias. ¿Y tú?
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
