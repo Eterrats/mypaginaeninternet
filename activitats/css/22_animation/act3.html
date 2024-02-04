@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartel de Cookies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .cartel-cookies {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .mostrar {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="cartel" class="cartel-cookies">
+  Este sitio web utiliza cookies para garantizar la mejor experiencia del usuario. Al continuar utilizando este sitio, aceptas el uso de cookies.
+</div>
+
+<script>
+  // Función para mostrar el cartel después de 5 segundos
+  setTimeout(function() {
+    var cartel = document.getElementById('cartel');
+    cartel.classList.add('mostrar');
+  }, 5000); // Mostrar después de 5 segundos
+</script>
+
+</body>
+</html>
