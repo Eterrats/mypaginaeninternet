@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Péndulo</title>
+<style>
+    .pendulum {
+        width: 4px;
+        height: 100px;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform-origin: 50% 0;
+        animation: swing 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes swing {
+        0% { transform: rotate(10deg); }
+        100% { transform: rotate(-10deg); }
+    }
+</style>
+</head>
+<body>
+<div class="pendulum"></div>
+</body>
+</html>
