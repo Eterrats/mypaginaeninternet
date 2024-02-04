@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UXDMC Example</title>
+  <style>
+    .img-container {
+      position: relative;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .img-container img {
+      display: block;
+      width: 100%;
+    }
+
+    .img-container:before,
+    .img-container:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #333;
+    }
+
+    .img-container:before {
+      top: 0;
+      left: 0;
+      transform: skewY(350deg);
+    }
+
+    .img-container:after {
+      bottom: 0;
+      right: 0;
+      transform: skewX(350deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="img-container">
+    <img src="10-monstruo.png" alt="UXDMC logo">
+  </div>
+</body>
+</html>
