@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal con efecto de tamaño</title>
+  <style>
+
+    .modal {
+      display: none; 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 150px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+
+    .modal:hover {
+      transform: translate(-50%, -50%) scale(2); 
+    }
+
+    .mostrar-modal {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+
+<button class="mostrar-modal" onclick="mostrarModal()">Mostrar Modal</button>
+
+
+<div id="miModal" class="modal">
+</div>
+
+<script>
+  function mostrarModal() {
+    var modal = document.getElementById('miModal');
+    modal.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
