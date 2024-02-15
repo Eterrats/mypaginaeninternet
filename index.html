@@ -3,10 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s; /* Transición suave del color */
+        }
+
+        nav ul li a:hover {
+            color: #00e1ff; /* Cambia el color al pasar el ratón por encima */
+        }
+
+
+        section {
+            padding: 50px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilos específicos */
+        h1, h2 {
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        section#inicio {
+            background-color: #f2f2f2;
+        }
+
+        section#acerca {
+            background-color: #e0e0e0;
+        }
+
+        section#contacto {
+            background-color: #ccc;
+            font-size: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<h1>ACTIVITATATS HTML</h1>
-    <a href="activitats/activitats.html">Anar a activitats</a>
+    <header>
+        <h1>Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="activitats\activitats.html">HTML</a></li>
+                <li><a href="activitats\actividadesCSS.html">CSS</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <h2>Mi pagina web</h2>
+        <p>Bienvenidos a mi pagina web.</p>
+        <p>En esta pagina web hay el resultado de todo el trabajo que he hecho de html y css.</p>
+        <p>Espero que os guste😁.</p>
+    </section>
+    <section id="sobre-mi">
+        <h2>Sobre mi</h2>
+        <p>Soy un estudiante del instituto Caparrella que esta haciendo un grado medio de SMX (sistemas microinformaticos y xarxes), nacido en lledia el 26 de agosto de 2005, actualmente tengo 18 años.</p>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <p><label for="nombre">Nombre:</label></p>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <p><label for="email">Email:</label></p>
+            <input type="email" id="email" name="email" required>
+
+            <p><label for="mensaje">Mensaje:</label></p>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Eric Terrats Sanchez</p>
+    </footer>
 </body>
 </html>
