@@ -1,144 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s; /* Transición suave del color */
-        }
-
-        nav ul li a:hover {
-            color: #00e1ff; /* Cambia el color al pasar el ratón por encima */
-        }
-
-
-        section {
-            padding: 50px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Estilos específicos */
-        h1, h2 {
-            font-family: 'Arial Black', sans-serif;
-        }
-
-        section#inicio {
-            background-color: #f2f2f2;
-        }
-
-        section#acerca {
-            background-color: #e0e0e0;
-        }
-
-        section#contacto {
-            background-color: #ccc;
-            font-size: 20px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperNET</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .contenedor-principal {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    header, footer {
+      flex-shrink: 0;
+      background-color: #00ADEF;
+      color: #ffffff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .logo {
+      max-height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+    .titulo nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .titulo nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+    .titulo nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .titulo nav ul li a:hover {
+      color: #ffcc00;
+    }
+    .informacion-empresa {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .informacion-empresa h1 {
+      font-size: 36px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .informacion-empresa p {
+      font-size: 18px;
+      color: #666;
+    }
+    .slogan {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .slogan h2 {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .slogan p {
+      font-size: 16px;
+      color: #666;
+    }
+    .imagenes-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .imagen {
+      margin: 0 10px;
+      width: 200px;
+    }
+    .imagen img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .imagen p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .informacion-contacto, .mapa {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .informacion-contacto p, .mapa a {
+      color: #ffffff;
+    }
+    .mapa a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .mapa a:hover {
+      color: #ffcc00;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Mi Página Web</h1>
-        <nav>
+
+  <div class="contenedor-principal">
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <div class="container">
+        <!-- Logo de la empresa -->
+        <img src="logo-hp.png" alt="Logo de SuperNET" class="logo">
+        <div class="titulo">
+          <nav>
             <ul>
-                <li><a href="activitats\activitats.html">HTML</a></li>
-                <li><a href="activitats\actividadesCSS.html">CSS</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
+              <li><a href="productos.html">Servicios</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="quienes-somos.html">Quiénes Somos</a></li>
             </ul>
-        </nav>
+          </nav>
+        </div>
+      </div>
     </header>
-    <section id="inicio">
-        <h2>Mi pagina web</h2>
-        <p>Bienvenidos a mi pagina web.</p>
-        <p>En esta pagina web hay el resultado de todo el trabajo que he hecho de html y css.</p>
-        <p>Espero que os guste😁.</p>
-    </section>
-    <section id="sobre-mi">
-        <h2>Sobre mi</h2>
-        <p>Soy un estudiante del instituto Caparrella que esta haciendo un grado medio de SMX (sistemas microinformaticos y xarxes), nacido en lledia el 26 de agosto de 2005, actualmente tengo 18 años.</p>
-    </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-            <p><label for="nombre">Nombre:</label></p>
-            <input type="text" id="nombre" name="nombre" required>
 
-            <p><label for="email">Email:</label></p>
-            <input type="email" id="email" name="email" required>
+    <!-- Contenido -->
+    <div class="informacion-empresa">
+      <h1>Bienvenido a SuperNET</h1>
+      <p>Somos líderes en soluciones tecnológicas para tu negocio. Ofrecemos una amplia gama de servicios que se adaptan a tus necesidades.</p>
+    </div>
 
-            <p><label for="mensaje">Mensaje:</label></p>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    <div class="slogan">
+      <h2>Transforma tu negocio con tecnología innovadora</h2>
+      <p>Descubre cómo nuestros servicios pueden impulsar el crecimiento y la eficiencia de tu empresa.</p>
+    </div>
 
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; Eric Terrats Sanchez</p>
+    <div class="imagenes-container">
+      <div class="imagen">
+        <img src="Optimización de procesos.jpg" alt="Optimización de procesos">
+        <p>Optimización de procesos</p>
+      </div>
+      <div class="imagen">
+        <img src="Seguridad de datos.png" alt="Seguridad de datos">
+        <p>Seguridad de datos</p>
+      </div>
+      <div class="imagen">
+        <img src="Soporte técnico especializado3.jpg" alt="Soporte técnico especializado">
+        <p>Soporte técnico especializado</p>
+      </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="pie-pagina">
+      <div class="container">
+        <div class="informacion-contacto">
+          <p>Dirección: Carrer de Can Ràbia, Distrito de Sarrià-Sant Gervasi, Barcelona</p>
+          <p>Teléfono: +1234567890</p>
+        </div>
+        <div class="mapa">
+          <a href="https://goo.gl/maps/direccion-de-tu-empresa" target="_blank">Ver en Google Maps</a>
+        </div>
+      </div>
     </footer>
+
+  </div>
+
 </body>
 </html>

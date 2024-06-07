@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #00ADEF;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  background-image: url('hero_bg.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #00ADEF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.products, .solutions, .services {
+  padding: 50px 20px;
+  background-color: #F2F2F2;
+}
+
+footer {
+  background-color: #00ADEF;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.informacion-empresa {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.informacion-empresa h1 {
+  font-size: 36px;
+  color: #00ADEF;
+  margin-bottom: 10px;
+}
+
+.informacion-empresa p {
+  font-size: 18px;
+  color: #666;
+}
+
+.slogan {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.slogan h2 {
+  font-size: 24px;
+  color: #00ADEF;
+  margin-bottom: 10px;
+}
+
+.slogan p {
+  font-size: 16px;
+  color: #666;
+}
+
+.imagenes-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imagen {
+  margin: 0 10px;
+  width: 200px;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen p {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.informacion-contacto, .mapa {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.informacion-contacto p, .mapa a {
+  color: #ffffff;
+}
+
+.mapa a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mapa a:hover {
+  color: #ffcc00;
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container h2 {
+  font-size: 36px;
+  color: #00ADEF;
+  margin-bottom: 20px;
+}
+
+.servicio {
+  text-align: left;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicio h3 {
+  font-size: 24px;
+  color: #00ADEF;
+  margin-bottom: 10px;
+}
+
+.servicio p {
+  font-size: 16px;
+  color: #666;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - SuperNET</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .contenedor-principal {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    header, footer {
+      flex-shrink: 0;
+      background-color: #00ADEF;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .logo {
+      max-height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+    .titulo nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .titulo nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+    .titulo nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .titulo nav ul li a:hover {
+      color: #ffcc00;
+    }
+    .informacion-empresa, .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .informacion-empresa h1, .container h2 {
+      font-size: 36px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .informacion-empresa p, .container p {
+      font-size: 18px;
+      color: #666;
+    }
+    .slogan {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .slogan h2 {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .slogan p {
+      font-size: 16px;
+      color: #666;
+    }
+    .imagenes-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .imagen {
+      margin: 0 10px;
+      width: 200px;
+    }
+    .imagen img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .imagen p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .informacion-contacto, .mapa {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .informacion-contacto p, .mapa a {
+      color: #ffffff;
+    }
+    .mapa a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .mapa a:hover {
+      color: #ffcc00;
+    }
+    .servicio {
+      text-align: left;
+      padding: 20px;
+      background-color: #ffffff;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .servicio h3 {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .servicio p {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="container">
+      <!-- Logo de la empresa -->
+      <img src="logo-hp.png" alt="Logo de SuperNET" class="logo">
+      <div class="titulo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido específico de la página de Servicios -->
+  <div class="container">
+    <h2>Nuestros Servicios</h2>
+
+    <article class="servicio">
+      <h3>Diseño de redes</h3>
+      <p>Analizamos las necesidades específicas de la organización y diseñamos una infraestructura de red personalizada que satisfaga esas necesidades. Esto implica determinar la topología de red adecuada, la selección de equipos y tecnologías, y la planificación de la capacidad.</p>
+    </article>
+
+    <article class="servicio">
+      <h3>Implementación de redes</h3>
+      <p>Instalamos y configuramos los dispositivos de red, como routers, switches, firewalls y puntos de acceso inalámbrico, según el diseño previamente establecido. Esto implica la instalación física de los equipos y la configuración de los parámetros de red, como direcciones IP, seguridad y acceso a recursos compartidos.</p>
+    </article>
+
+    <article class="servicio">
+      <h3>Optimización de redes</h3>
+      <p>Realizamos ajustes y optimizaciones en la red para mejorar el rendimiento, la seguridad y la fiabilidad. Esto puede incluir la optimización de la configuración de equipos, la gestión del ancho de banda y la resolución de problemas de rendimiento.</p>
+    </article>
+
+    <article class="servicio">
+      <h3>Seguridad de redes</h3>
+      <p>Implementamos medidas de seguridad para proteger la red contra amenazas externas e internas. Esto puede incluir la configuración de firewalls, sistemas de detección de intrusiones, VPN (redes privadas virtuales) y políticas de acceso.</p>
+    </article>
+
+    <article class="servicio">
+      <h3>Mantenimiento y soporte</h3>
+      <p>Brindamos servicios de mantenimiento continuo para garantizar que la red funcione sin problemas. Esto implica monitorear la red, aplicar actualizaciones de software y firmware, realizar copias de seguridad y proporcionar soporte técnico para resolver problemas y responder preguntas de los usuarios.</p>
+    </article>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="informacion-contacto">
+        <p>Dirección: Carrer de Can Ràbia, Distrito de Sarrià-Sant Gervasi, Barcelona</p>
+        <p>Teléfono: +1234567890</p>
+      </div>
+      <div class="mapa">
+        <a href="https://goo.gl/maps/direccion-de-tu-empresa" target="_blank">Ver en Google Maps</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

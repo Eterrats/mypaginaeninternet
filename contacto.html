@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - SuperNET</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .contenedor-principal {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    header,
+    footer {
+      flex-shrink: 0;
+      background-color: #00ADEF;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .logo {
+      max-height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .titulo nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .titulo nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    .titulo nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .titulo nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .informacion-empresa,
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .informacion-empresa h1,
+    .container h2 {
+      font-size: 36px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+
+    .informacion-empresa p,
+    .container p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .slogan {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .slogan h2 {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+
+    .slogan p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .imagenes-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .imagen {
+      margin: 0 10px;
+      width: 200px;
+    }
+
+    .imagen img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .imagen p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .informacion-contacto,
+    .mapa {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .informacion-contacto p,
+    .mapa a {
+      color: #ffffff;
+    }
+
+    .mapa a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .mapa a:hover {
+      color: #ffcc00;
+    }
+
+    .servicio {
+      text-align: left;
+      padding: 20px;
+      background-color: #ffffff;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .servicio h3 {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+
+    .servicio p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .contact-form fieldset {
+      border: none;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    .contact-form legend {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .checkbox-group label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    button {
+      background-color: #00ADEF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #007bb5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="container">
+      <!-- Logo de la empresa -->
+      <img src="logo-hp.png" alt="Logo de SuperNET" class="logo">
+      <div class="titulo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido específico de la página de Contacto -->
+  <div class="container">
+    <h2>Preguntas sobre productos y soluciones</h2>
+    <p>¿Tienes alguna pregunta sobre la compra de un producto o solución que te interese? Estamos aquí para ayudarte.</p>
+
+    <form action="enviar_formulario.php" method="post" class="contact-form">
+      <fieldset>
+        <legend>Información personal</legend>
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="input-group">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Dirección de correo electrónico del trabajo</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="pais">País/Región</label>
+          <input type="text" id="pais" name="pais" required>
+        </div>
+        <div class="input-group">
+          <label for="telefono">Teléfono de la empresa</label>
+          <input type="tel" id="telefono" name="telefono" value="34" required>
+        </div>
+        <div class="input-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consulta</legend>
+        <div class="input-group">
+          <label for="area_interes">Área de interés</label>
+          <input type="text" id="area_interes" name="area_interes" required>
+        </div>
+        <div class="input-group">
+          <label for="productos">¿Sobre qué productos, servicios o soluciones te gustaría hablar con un especialista en ventas?</label>
+          <textarea id="productos" name="productos" maxlength="3000" rows="4" required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferencias de comunicación</legend>
+        <div class="input-group">
+          <label>¿Te gustaría recibir comunicaciones personalizadas sobre SuperNET y sobre productos, servicios, ofertas y eventos seleccionados de partners de SuperNET?</label>
+          <div class="checkbox-group">
+            <label for="correo_comunicaciones">
+              <input type="checkbox" id="correo_comunicaciones" name="comunicaciones[]" value="correo"> Correo electrónico
+            </label>
+            <label for="telefono_comunicaciones">
+              <input type="checkbox" id="telefono_comunicaciones" name="comunicaciones[]" value="telefono"> Teléfono
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit">Continuar</button>
+    </form>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="informacion-contacto">
+        <p>Dirección: Carrer de Can Ràbia, Distrito de Sarrià-Sant Gervasi, Barcelona</p>
+        <p>Teléfono: +1234567890</p>
+      </div>
+      <div class="mapa">
+        <a href="https://goo.gl/maps/direccion-de-tu-empresa" target="_blank">Ver en Google Maps</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
