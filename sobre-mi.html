@@ -3,34 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Sobre Mí - Eric Terrats Sánchez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <style>
+        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            scroll-behavior: smooth;
+            background-color: #f4f7fa;
+            color: #333;
         }
 
-        .container {
+        header {
+            background-color: #1a2b3c;
+            color: #fff;
+            padding: 60px 20px 40px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 20px 0 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #3a7bd5;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #1a2b3c;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            font-size: 1em;
+            border-top: 4px solid #3a7bd5;
+        }
+
+        /* Estilos específicos */
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1a2b3c;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #3a7bd5;
+            margin: 10px auto 0;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #555;
             max-width: 800px;
-            margin: 50px auto;
+            margin: 0 auto 25px;
+            font-size: 1.1em;
+        }
+
+        section#sobre-mi {
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            margin: 40px auto;
+            padding: 60px 40px;
+        }
+
+        .sobre-mi-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .sobre-mi-texto {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .sobre-mi-foto {
+            flex: 0 1 250px;
             text-align: center;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        .sobre-mi-foto img {
+            width: 220px;
+            height: 220px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            object-fit: cover;
+            border: 5px solid #3a7bd5;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .sobre-mi-foto img:hover {
+            transform: scale(1.08) rotate(3deg);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .conocimientos {
+            margin-top: 40px;
+        }
+
+        .conocimientos h3 {
+            font-size: 2em;
+            margin-bottom: 25px;
+            text-align: center;
+            color: #1a2b3c;
+        }
+
+        .conocimientos ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .conocimientos li {
+            background-color: #f0f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #3a7bd5;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .conocimientos li:hover {
+            background-color: #d9e6f2;
+            transform: translateY(-5px);
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            .sobre-mi-container {
+                flex-direction: column;
+                gap: 30px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido a mi página web</h1>
-        <img src="tu_foto.jpg" alt="Tu Foto">
-        <p>¡Hola! Soy [Tu Nombre]. Esta es mi página web personal donde comparto un poco sobre mí y mis intereses.</p>
-    </div>
+    <header>
+        <h1>Portafolio Profesional de Eric Terrats Sánchez</h1>
+        <nav>
+            <ul>
+                <li><a href="activitats/activitats.html">HTML</a></li>
+                <li><a href="activitats/actividadesCSS.html">CSS</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <div class="sobre-mi-container">
+            <div class="sobre-mi-foto">
+                <img src="path/to/tu-foto.jpg" alt="Foto de Eric Terrats Sánchez">
+                <p>(Inserta aquí el camino a tu foto personal)</p>
+            </div>
+            <div class="sobre-mi-texto">
+                <p>Soy Eric Terrats Sánchez, nacido en Lleida el 26 de agosto de 2005. Con 20 años, he completado un Ciclo Medio de Sistemas Microinformáticos y Redes (SMX) en el instituto Caparrella. Actualmente, estoy cursando un Ciclo Superior de Desarrollo de Aplicaciones Multiplataforma (DAM), donde profundizo en el diseño y programación de soluciones multiplataforma innovadoras.</p>
+                <p>Mi pasión por la tecnología me impulsa a crear aplicaciones funcionales y estéticamente atractivas, con un enfoque en la usabilidad y el rendimiento.</p>
+            </div>
+        </div>
+        <div class="conocimientos">
+            <h3>Mis Conocimientos y Habilidades</h3>
+            <ul>
+                <li>HTML5 y Semántica Web</li>
+                <li>CSS3 Avanzado (Flexbox, Grid, Transiciones y Animaciones)</li>
+                <li>JavaScript y Programación Front-End</li>
+                <li>Desarrollo Back-End con PHP</li>
+                <li>Bases de Datos (MySQL, SQL)</li>
+                <li>Redes Informáticas y Seguridad</li>
+                <li>Sistemas Operativos (Windows, Linux)</li>
+                <li>Desarrollo de Aplicaciones Multiplataforma (Java, Android)</li>
+                <li>Gestión de Proyectos con Metodologías Ágiles</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Eric Terrats Sánchez. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

@@ -1,144 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Portafolio Profesional de Eric Terrats Sánchez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <style>
         /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth;
+            background-color: #f4f7fa;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #1a2b3c;
             color: #fff;
-            padding: 20px;
+            padding: 60px 20px 40px;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            letter-spacing: 1px;
         }
 
         nav ul {
             list-style-type: none;
-            margin: 0;
+            margin: 20px 0 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
         }
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s; /* Transición suave del color */
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         nav ul li a:hover {
-            color: #00e1ff; /* Cambia el color al pasar el ratón por encima */
+            background-color: #3a7bd5;
+            transform: translateY(-2px);
         }
 
-
         section {
-            padding: 50px;
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         footer {
-            background-color: #333;
+            background-color: #1a2b3c;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
+            font-size: 1em;
+            border-top: 4px solid #3a7bd5;
         }
 
         /* Estilos específicos */
         h1, h2 {
-            font-family: 'Arial Black', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            color: #1a2b3c;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #3a7bd5;
+            margin: 10px auto 0;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            font-size: 1.1em;
         }
 
         section#inicio {
-            background-color: #f2f2f2;
-        }
-
-        section#acerca {
-            background-color: #e0e0e0;
+            background: linear-gradient(135deg, #e8f0fe, #d4e3f8);
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin: 40px auto;
         }
 
         section#contacto {
-            background-color: #ccc;
-            font-size: 20px;
+            background: linear-gradient(135deg, #f4f7fa, #e0e7ef);
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin: 40px auto;
         }
 
         form {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
         }
 
         label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #1a2b3c;
+            text-align: left;
         }
 
         input, textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 16px;
+            padding: 15px;
+            margin-bottom: 25px;
             box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #3a7bd5;
+            box-shadow: 0 0 8px rgba(58, 123, 213, 0.2);
+            outline: none;
         }
 
         button {
-            background-color: #333;
+            background-color: #3a7bd5;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #2c5aa0;
+            transform: translateY(-2px);
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            form {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>Portafolio Profesional de Eric Terrats Sánchez</h1>
         <nav>
             <ul>
-                <li><a href="activitats\activitats.html">HTML</a></li>
-                <li><a href="activitats\actividadesCSS.html">CSS</a></li>
+                <li><a href="activitats/activitats.html">HTML</a></li>
+                <li><a href="activitats/actividadesCSS.html">CSS</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
             </ul>
         </nav>
     </header>
     <section id="inicio">
-        <h2>Mi pagina web</h2>
-        <p>Bienvenidos a mi pagina web.</p>
-        <p>En esta pagina web hay el resultado de todo el trabajo que he hecho de html y css.</p>
-        <p>Espero que os guste😁.</p>
-    </section>
-    <section id="sobre-mi">
-        <h2>Sobre mi</h2>
-        <p>Soy un estudiante del instituto Caparrella que esta haciendo un grado medio de SMX (sistemas microinformaticos y xarxes), nacido en lledia el 26 de agosto de 2005, actualmente tengo 18 años.</p>
+        <h2>Bienvenido a mi Portafolio Profesional</h2>
+        <p>En esta página web, presento mis proyectos y trabajos realizados en desarrollo web, con un enfoque en HTML, CSS y tecnologías relacionadas. Como profesional en formación, muestro mi experiencia y habilidades adquiridas a lo largo de mi trayectoria educativa.</p>
+        <p>Explora mis secciones y contáctame para colaboraciones o consultas.</p>
     </section>
     <section id="contacto">
         <h2>Contacto</h2>
         <form action="#" method="post">
-            <p><label for="nombre">Nombre:</label></p>
+            <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
-            <p><label for="email">Email:</label></p>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <p><label for="mensaje">Mensaje:</label></p>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
 
             <button type="submit">Enviar Mensaje</button>
         </form>
     </section>
     <footer>
-        <p>&copy; Eric Terrats Sanchez</p>
+        <p>&copy; 2026 Eric Terrats Sánchez. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
