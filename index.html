@@ -6,7 +6,7 @@
     <title>Portafolio Profesional de Eric Terrats Sánchez</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <style>
-        /* Estilos generales */
+        /* Estilos generales inspirados en un diseño minimalista y profesional como el de Ferran Hernandez */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -115,6 +115,50 @@
             margin: 40px auto;
         }
 
+        section#proyectos {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 60px 40px;
+            margin: 40px auto;
+        }
+
+        .proyecto-lista {
+            list-style-type: none;
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .proyecto-lista li {
+            background-color: #f0f4f8;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .proyecto-lista li:hover {
+            transform: translateY(-5px);
+        }
+
+        .proyecto-lista li h3 {
+            margin-top: 0;
+            color: #3a7bd5;
+            font-size: 1.5em;
+        }
+
+        .proyecto-lista li p {
+            margin: 10px 0;
+        }
+
+        .proyecto-lista li a {
+            color: #3a7bd5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
         section#contacto {
             background: linear-gradient(135deg, #f4f7fa, #e0e7ef);
             text-align: center;
@@ -195,17 +239,34 @@
         <h1>Portafolio Profesional de Eric Terrats Sánchez</h1>
         <nav>
             <ul>
-                <li><a href="activitats/activitats.html">HTML</a></li>
-                <li><a href="activitats/actividadesCSS.html">CSS</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
             </ul>
         </nav>
     </header>
     <section id="inicio">
         <h2>Bienvenido a mi Portafolio Profesional</h2>
-        <p>En esta página web, presento mis proyectos y trabajos realizados en desarrollo web, con un enfoque en HTML, CSS y tecnologías relacionadas. Como profesional en formación, muestro mi experiencia y habilidades adquiridas a lo largo de mi trayectoria educativa.</p>
-        <p>Explora mis secciones y contáctame para colaboraciones o consultas.</p>
+        <p>En esta página web, presento mis proyectos y trabajos realizados en desarrollo web y aplicaciones multiplataforma. Como estudiante en formación avanzada, muestro mi experiencia académica y habilidades adquiridas en informática.</p>
+        <p>Explora mis secciones para conocer más sobre mis proyectos, habilidades y trayectoria.</p>
+    </section>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul class="proyecto-lista">
+            <li>
+                <h3>Actividades HTML</h3>
+                <p>Conjunto de ejercicios y prácticas en HTML para estructurar páginas web básicas y avanzadas.</p>
+                <p>Tecnologías: HTML5</p>
+                <a href="activitats/activitats.html">Ver más</a>
+            </li>
+            <li>
+                <h3>Actividades CSS</h3>
+                <p>Ejercicios enfocados en estilización web, incluyendo layouts responsivos, animaciones y diseños modernos.</p>
+                <p>Tecnologías: CSS3, Flexbox, Grid</p>
+                <a href="activitats/actividadesCSS.html">Ver más</a>
+            </li>
+            <!-- Añade más proyectos aquí si tienes, inspirado en la lista de Ferran -->
+        </ul>
     </section>
     <section id="contacto">
         <h2>Contacto</h2>
