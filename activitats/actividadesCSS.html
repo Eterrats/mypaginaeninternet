@@ -1,131 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades de CSS</title>
+    <title>Actividades CSS | Eric Terrats Sánchez</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://thumbs.dreamstime.com/b/hacker-sobre-uma-tela-com-c%C3%B3digo-bin%C3%A1rio-50024303.jpg');
-            background-size: cover;
-            background-position: center;
-            
+            background-color: #f4f7fa;
+            color: #333;
+        }
 
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
+        header {
+            background-color: #1a2b3c;
+            color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgb(0, 255, 200);
-            background-color: rgb(0, 0, 0);
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        h1 {
-            margin-top: 0;
-            color: rgb(255, 255, 255);
+
+        header h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
         }
-        p {
-            margin: 5px 0;
+
+        nav {
+            margin-top: 15px;
         }
-        a {
-            color: #007bff;
+
+        nav a {
+            color: #fff;
             text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
         }
-        a:hover {
-            text-decoration: underline;
+
+        nav a:hover {
+            background-color: #3a7bd5;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #1a2b3c;
+        }
+
+        .bloque {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .bloque:hover {
+            transform: translateY(-5px);
+        }
+
+        .bloque h3 {
+            margin-top: 0;
+            color: #3a7bd5;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .actividad-lista {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .actividad-lista li {
+            margin-bottom: 10px;
+        }
+
+        .actividad-lista a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .actividad-lista a:hover {
+            color: #3a7bd5;
+        }
+
+        footer {
+            background-color: #1a2b3c;
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                margin: 40px 15px;
+            }
+
+            .bloque {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Actividades de CSS</h1>
 
-        <h1>03_selectores</h1>
-        <p><a href="css\03_selectores\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\03_selectores\act2.html">Ana a activitat 2</a></p>
-    
-        <h1>04_varialbles</h1>
-        <p><a href="css\04_varialbles\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\04_varialbles\act2.html">Ana a activitat 2</a></p>
-    
-        <h1>06_BEM</h1>
-        <p><a href="css\06_BEM\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\06_BEM\act2.html">Ana a activitat 2</a></p>
-    
-        <h1>07_Color</h1>
-        <p><a href="css\07_Color\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\07_Color\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\07_Color\act3.html">Ana a activitat 3</a></p>
-    
-        <h1>08_texto</h1>
-        <p><a href="css\08_texto\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\08_texto\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\08_texto\act3.html">Ana a activitat 3</a></p>
-        <p><a href="css\08_texto\act4.html">Ana a activitat 4</a></p>
-        <p><a href="css\08_texto\act5.html">Ana a activitat 5</a></p>
-    
-        <h1>09_medidas</h1>
-        <p><a href="css\09_medidas\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\09_medidas\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\09_medidas\act3.html">Ana a activitat 3</a></p>
-        <p><a href="css\09_medidas\act4.html">Ana a activitat 4</a></p>
-    
-        <h1>10_Imagenes</h1>
-        <p><a href="css\10_Imagenes\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\10_Imagenes\act2.html">Ana a activitat 2</a></p>
-    
-        <h1>11_display</h1>
-        <p><a href="css\11_display\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\11_display\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\11_display\act3.html">Ana a activitat 3</a></p>
-    
-        <h1>12_margin</h1>
-        <p><a href="css\12_margin\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\12_margin\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\12_margin\act3.html">Ana a activitat 3</a></p>
-    
-        <h1>14_border</h1>
-        <p><a href="css/14_border/act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\14_border\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\14_border\act3.html">Ana a activitat 3</a></p>
-        <p><a href="css\14_border\act4.html">Ana a activitat 4</a></p>
+<header>
+    <h1>Actividades de CSS</h1>
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
+    </nav>
+</header>
 
-        <h1>16_listas</h1>
-        <p><a href="css\16_listas\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\16_listas\act2.html">Ana a activitat 2</a></p>
-        <p><a href="\css\16_listas\act3.html">Ana a activitat 3</a></p>
-        <p><a href="css\16_listas\act4.html">Ana a activitat 4</a></p>
+<section>
+    <h2>Listado Completo de Actividades</h2>
 
-        <h1>17_overflow</h1>
-        <p><a href="css\17_overflow\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\17_overflow\act2.html">Ana a activitat 2</a></p>
-
-        <h1>19_filters</h1>
-        <p><a href="css\19_filters\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\19_filters\act2.html">Ana a activitat 2</a></p>
-
-        <h1>20_transform</h1>
-        <p><a href="css\20_transform\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\20_transform\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\20_transform\act3.html">Ana a activitat 3</a></p>
-
-        <h1>21_transition</h1>
-        <p><a href="css\21_transition\act1.html">Ana a activitat 1</a></p>
-
-        <h1>22_animation</h1>
-        <p><a href="css\22_animation\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\22_animation\act2.html">Ana a activitat 2</a></p>
-        <p><a href="css\22_animation\act3.html">Ana a activitat 3</a></p>
-        <p><a href="css\22_animation\act4.html">Ana a activitat 4</a></p>
-        <p><a href="css\22_animation\act5.html">Ana a activitat 5</a></p>
-        <p><a href="css\22_animation\act6.html">Ana a activitat 6</a></p>
-
-        <h1>23_3D</h1>
-        <p><a href="css\23_3D\act1.html">Ana a activitat 1</a></p>
-        <p><a href="css\23_3D\act2.html">Ana a activitat 2</a></p>
+    <div class="bloque">
+        <h3>03 - Selectores</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/03_selectores/act1.html">Actividad 1</a></li>
+            <li><a href="css/03_selectores/act2.html">Actividad 2</a></li>
+        </ul>
     </div>
+
+    <div class="bloque">
+        <h3>04 - Variables</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/04_varialbles/act1.html">Actividad 1</a></li>
+            <li><a href="css/04_varialbles/act2.html">Actividad 2</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>06 - BEM</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/06_BEM/act1.html">Actividad 1</a></li>
+            <li><a href="css/06_BEM/act2.html">Actividad 2</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>07 - Color</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/07_Color/act1.html">Actividad 1</a></li>
+            <li><a href="css/07_Color/act2.html">Actividad 2</a></li>
+            <li><a href="css/07_Color/act3.html">Actividad 3</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>08 - Texto</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/08_texto/act1.html">Actividad 1</a></li>
+            <li><a href="css/08_texto/act2.html">Actividad 2</a></li>
+            <li><a href="css/08_texto/act3.html">Actividad 3</a></li>
+            <li><a href="css/08_texto/act4.html">Actividad 4</a></li>
+            <li><a href="css/08_texto/act5.html">Actividad 5</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>09 - Medidas</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/09_medidas/act1.html">Actividad 1</a></li>
+            <li><a href="css/09_medidas/act2.html">Actividad 2</a></li>
+            <li><a href="css/09_medidas/act3.html">Actividad 3</a></li>
+            <li><a href="css/09_medidas/act4.html">Actividad 4</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>10 - Imágenes</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/10_Imagenes/act1.html">Actividad 1</a></li>
+            <li><a href="css/10_Imagenes/act2.html">Actividad 2</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>11 - Display</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/11_display/act1.html">Actividad 1</a></li>
+            <li><a href="css/11_display/act2.html">Actividad 2</a></li>
+            <li><a href="css/11_display/act3.html">Actividad 3</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>12 - Margin</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/12_margin/act1.html">Actividad 1</a></li>
+            <li><a href="css/12_margin/act2.html">Actividad 2</a></li>
+            <li><a href="css/12_margin/act3.html">Actividad 3</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>14 - Border</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/14_border/act1.html">Actividad 1</a></li>
+            <li><a href="css/14_border/act2.html">Actividad 2</a></li>
+            <li><a href="css/14_border/act3.html">Actividad 3</a></li>
+            <li><a href="css/14_border/act4.html">Actividad 4</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>16 - Listas</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/16_listas/act1.html">Actividad 1</a></li>
+            <li><a href="css/16_listas/act2.html">Actividad 2</a></li>
+            <li><a href="css/16_listas/act3.html">Actividad 3</a></li>
+            <li><a href="css/16_listas/act4.html">Actividad 4</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>17 - Overflow</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/17_overflow/act1.html">Actividad 1</a></li>
+            <li><a href="css/17_overflow/act2.html">Actividad 2</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>19 - Filters</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/19_filters/act1.html">Actividad 1</a></li>
+            <li><a href="css/19_filters/act2.html">Actividad 2</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>20 - Transform</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/20_transform/act1.html">Actividad 1</a></li>
+            <li><a href="css/20_transform/act2.html">Actividad 2</a></li>
+            <li><a href="css/20_transform/act3.html">Actividad 3</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>21 - Transition</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/21_transition/act1.html">Actividad 1</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>22 - Animation</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/22_animation/act1.html">Actividad 1</a></li>
+            <li><a href="css/22_animation/act2.html">Actividad 2</a></li>
+            <li><a href="css/22_animation/act3.html">Actividad 3</a></li>
+            <li><a href="css/22_animation/act4.html">Actividad 4</a></li>
+            <li><a href="css/22_animation/act5.html">Actividad 5</a></li>
+            <li><a href="css/22_animation/act6.html">Actividad 6</a></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h3>23 - 3D</h3>
+        <ul class="actividad-lista">
+            <li><a href="css/23_3D/act1.html">Actividad 1</a></li>
+            <li><a href="css/23_3D/act2.html">Actividad 2</a></li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Eric Terrats Sánchez - Portafolio Profesional</p>
+</footer>
+
 </body>
 </html>
